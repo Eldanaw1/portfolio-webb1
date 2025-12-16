@@ -1,11 +1,12 @@
-portfolio/
-├── index.html
-├── css/
-│   └── style.css
-├── js/
-│   └── carousel.js
+eldana-portfolio/
+│
+├── index.html          (Huvudfil med semantisk HTML)
+├── style.css           (CSS med Grid, Flexbox, responsiv design)
+├── script.js           (JavaScript för bildspel)
 ├── images/
-│   ├── profile.jpg
-│   └── project1.jpg
-└── projects/
-    └── project1.html
+│   ├── eldana-profile.webp  (Optimerad profilbild)
+│   ├── care-work.webp       (Vårdarbete bild)
+│   ├── customer-service.webp (Kundservice bild)
+│   ├── education.webp       (Utbildning bild)
+│   └── skills.webp          (Kompetens bild)
+└── README.md           (Projektdokumentation)
