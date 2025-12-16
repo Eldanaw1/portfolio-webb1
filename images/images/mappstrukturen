@@ -1,0 +1,11 @@
+portfolio/
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   └── carousel.js
+├── images/
+│   ├── profile.jpg
+│   └── project1.jpg
+└── projects/
+    └── project1.html
