@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio för frontend-utvecklare">
+    <title>Portfolio | [Ditt Namn]</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="site-header" role="banner">
+        <nav class="main-nav" aria-label="Huvudnavigation">
+            <a href="/" class="logo">Portfolio</a>
+            <button class="menu-toggle" aria-expanded="false" aria-label="Öppna meny">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#about">Om mig</a></li>
+                <li><a href="#projects">Projekt</a></li>
+                <li><a href="#skills">Kompetens</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <main>
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="hero-content">
+                <h1 id="hero-heading">Hej, jag är <span class="highlight">[Ditt Namn]</span></h1>
+                <p class="subtitle">Frontend-utvecklare med fokus på tillgänglighet och responsiv design</p>
+                <a href="#projects" class="btn-primary">Se mina projekt</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/optimized/profile.jpg" alt="[Ditt Namn vid datorn]" width="400" height="400">
+            </div>
+        </section>
+
+        <!-- PROJEKT -->
+        <section id="projects" class="projects-section" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Mina Projekt</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <figure>
+                        <img src="images/optimized/project1.jpg" alt="Skärmdump av projekt 1" loading="lazy">
+                        <figcaption>E-handelsplattform med React</figcaption>
+                    </figure>
+                    <h3>E-handelssystem</h3>
+                    <p>Fullstack lösning med React och Node.js</p>
+                    <a href="projects/project1.html" class="btn-secondary">Läs mer</a>
+                </article>
+                <article class="project-card">
+                    <figure>
+                        <img src="images/optimized/project2.jpg" alt="Skärmdump av projekt 2" loading="lazy">
+                        <figcaption>Portfolio webbplats</figcaption>
+                    </figure>
+                    <h3>Portfolio</h3>
+                    <p>Responsiv webbplats med HTML, CSS Grid och Flexbox</p>
+                    <a href="projects/project2.html" class="btn-secondary">Läs mer</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- BILDSPEL / TESTIMONIALS -->
+        <section class="testimonials" aria-labelledby="testimonials-heading">
+            <h2 id="testimonials-heading">Referenser</h2>
+            <div class="carousel" role="region" aria-label="Bildspel referenser">
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide current-slide">
+                            <blockquote>
+                                <p>"Exceptionell kodkvalitet och uppmärksamhet på detaljer"</p>
+                                <cite>- Tidigare klient</cite>
+                            </blockquote>
+                        </li>
+                        <li class="carousel-slide">
+                            <blockquote>
+                                <p>"Responsiv design och snabb leverans"</p>
+                                <cite>- Kollegor</cite>
+                            </blockquote>
+                        </li>
+                    </ul>
+                </div>
+                <div class="carousel-nav">
+                    <button class="carousel-indicator current-slide" aria-label="Visa referens 1"></button>
+                    <button class="carousel-indicator" aria-label="Visa referens 2"></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer role="contentinfo" class="site-footer">
+        <p>&copy; 2024 [Ditt Namn]. Alla rättigheter förbehållna.</p>
+        <a href="privacy.html">Integritetspolicy</a>
+    </footer>
+
+    <script src="js/carousel.js" defer></script>
+</body>
+</html>
