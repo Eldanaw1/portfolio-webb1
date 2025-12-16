@@ -3,99 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio för frontend-utvecklare">
-    <title>Portfolio | [Ditt Namn]</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Eldana Woldemichael - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- HEADER -->
-    <header class="site-header" role="banner">
-        <nav class="main-nav" aria-label="Huvudnavigation">
-            <a href="/" class="logo">Portfolio</a>
-            <button class="menu-toggle" aria-expanded="false" aria-label="Öppna meny">
-                <span class="hamburger"></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="#about">Om mig</a></li>
-                <li><a href="#projects">Projekt</a></li>
-                <li><a href="#skills">Kompetens</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="header-container">
+            <h1>ELDANA WOLDEMICHAEL</h1>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#profile"><i class="fas fa-user"></i> Profil</a></li>
+                    <li><a href="#experience"><i class="fas fa-briefcase"></i> Erfarenhet</a></li>
+                    <li><a href="#education"><i class="fas fa-graduation-cap"></i> Utbildning</a></li>
+                    <li><a href="#skills"><i class="fas fa-tools"></i> Kompetenser</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Kontakt</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <!-- HERO -->
     <main>
-        <section class="hero" aria-labelledby="hero-heading">
+        <!-- Hero Section -->
+        <section class="hero">
             <div class="hero-content">
-                <h1 id="hero-heading">Hej, jag är <span class="highlight">[Ditt Namn]</span></h1>
-                <p class="subtitle">Frontend-utvecklare med fokus på tillgänglighet och responsiv design</p>
-                <a href="#projects" class="btn-primary">Se mina projekt</a>
-            </div>
-            <div class="hero-image">
-                <img src="images/optimized/profile.jpg" alt="[Ditt Namn vid datorn]" width="400" height="400">
-            </div>
-        </section>
-
-        <!-- PROJEKT -->
-        <section id="projects" class="projects-section" aria-labelledby="projects-heading">
-            <h2 id="projects-heading">Mina Projekt</h2>
-            <div class="projects-grid">
-                <article class="project-card">
-                    <figure>
-                        <img src="images/optimized/project1.jpg" alt="Skärmdump av projekt 1" loading="lazy">
-                        <figcaption>E-handelsplattform med React</figcaption>
-                    </figure>
-                    <h3>E-handelssystem</h3>
-                    <p>Fullstack lösning med React och Node.js</p>
-                    <a href="projects/project1.html" class="btn-secondary">Läs mer</a>
-                </article>
-                <article class="project-card">
-                    <figure>
-                        <img src="images/optimized/project2.jpg" alt="Skärmdump av projekt 2" loading="lazy">
-                        <figcaption>Portfolio webbplats</figcaption>
-                    </figure>
-                    <h3>Portfolio</h3>
-                    <p>Responsiv webbplats med HTML, CSS Grid och Flexbox</p>
-                    <a href="projects/project2.html" class="btn-secondary">Läs mer</a>
-                </article>
-            </div>
-        </section>
-
-        <!-- BILDSPEL / TESTIMONIALS -->
-        <section class="testimonials" aria-labelledby="testimonials-heading">
-            <h2 id="testimonials-heading">Referenser</h2>
-            <div class="carousel" role="region" aria-label="Bildspel referenser">
-                <div class="carousel-track-container">
-                    <ul class="carousel-track">
-                        <li class="carousel-slide current-slide">
-                            <blockquote>
-                                <p>"Exceptionell kodkvalitet och uppmärksamhet på detaljer"</p>
-                                <cite>- Tidigare klient</cite>
-                            </blockquote>
-                        </li>
-                        <li class="carousel-slide">
-                            <blockquote>
-                                <p>"Responsiv design och snabb leverans"</p>
-                                <cite>- Kollegor</cite>
-                            </blockquote>
-                        </li>
-                    </ul>
+                <div class="hero-text">
+                    <h2>Mångsidig & Motiverad Professionell</h2>
+                    <p>Med erfarenhet från vård, service och försäljning</p>
+                    <a href="#contact" class="cta-button">Kontakta mig</a>
                 </div>
-                <div class="carousel-nav">
-                    <button class="carousel-indicator current-slide" aria-label="Visa referens 1"></button>
-                    <button class="carousel-indicator" aria-label="Visa referens 2"></button>
+                <div class="hero-image">
+                    <img src="images/eldana-profile.webp" alt="Eldana Woldemichael - Profilbild" width="400" height="400">
+                </div>
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile" class="section">
+            <h2><i class="fas fa-user"></i> PROFIL</h2>
+            <div class="profile-content">
+                <p>Jag är en mångsidig, motiverad och hårt arbetande individ med en stark arbetsmoral och en passion för att utvecklas både professionellt och personligt. Med erfarenhet från olika branscher, inklusive vård, service och försäljning, har jag utvecklat en unik förmåga att snabbt anpassa mig till nya miljöer och arbetsuppgifter.</p>
+                <p>Jag trivs med att ta på mig utmaningar och har en beprövad förmåga att prestera under press och i krävande situationer. Min positiva inställning och starka samarbetsförmåga gör mig till en värdefull tillgång i alla team.</p>
+            </div>
+        </section>
+
+        <!-- Work Experience -->
+        <section id="experience" class="section">
+            <h2><i class="fas fa-briefcase"></i> ARBETSLIVSERFARENHET</h2>
+            <div class="grid-container">
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Personlig assistent</h3>
+                        <p class="company">Olivia Assikrant, Västerås – Göteborg</p>
+                        <p class="date">Jan 2024 – Sep 2024</p>
+                    </div>
+                    <ul class="card-list">
+                        <li>Stöd och omvårdnad för personer med funktionsnedsättning</li>
+                        <li>Planering och organisering av dagliga aktiviteter</li>
+                        <li>Mentor för nya kollegor</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Åldreboende (dementboende)</h3>
+                        <p class="company">Västerås stad, Västerås</p>
+                        <p class="date">Jan 2023 – Dec 2023</p>
+                    </div>
+                    <ul class="card-list">
+                        <li>Omvårdnad och medicinhantering</li>
+                        <li>Dokumentation av vårdinsatser</li>
+                        <li>Emotionellt och praktiskt stöd</li>
+                        <li>Mentorskap för praktikanter</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Hemtjänst</h3>
+                        <p class="company">Västerås stad, Västerås</p>
+                        <p class="date">2021 – Dec 2022</p>
+                    </div>
+                    <ul class="card-list">
+                        <li>Hushållsrelaterade uppgifter och omvårdnad</li>
+                        <li>Medicinering och dokumentation</li>
+                        <li>Skapande av trygg miljö</li>
+                        <li>Stöd för nya kollegor</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Kundservice och försäljning</h3>
+                        <p class="company">Aldovo AB, Västerås</p>
+                        <p class="date">Jun 2021 – Dec 2027</p>
+                    </div>
+                    <ul class="card-list">
+                        <li>Kundsupport och hantering av kundfrågor</li>
+                        <li>Försäljning och bidrag till företagets mål</li>
+                        <li>Effektivt arbete under tidspress</li>
+                        <li>Mentorskap för nya anställda</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="section">
+            <h2><i class="fas fa-graduation-cap"></i> UTBILDNING</h2>
+            <div class="education-container">
+                <div class="education-item">
+                    <h3>Arena Utbildning, Göteborg</h3>
+                    <p class="date">Oktober 2024 – Maj 2025</p>
+                    <p>Fokuserade på naturvetenskap och teknik med stor vikt på självständigt arbete och problemlösning.</p>
+                </div>
+                <div class="education-item">
+                    <h3>IB-programmet, Carforska Gymnasiet</h3>
+                    <p class="date">Augusti 2021 – Juni 2024</p>
+                    <p>En utmanande och bred utbildning som stärkte min analytiska förmåga och självständighet.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section">
+            <h2><i class="fas fa-tools"></i> FÄRDIGHETER OCH KOMPETENSER</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Personliga egenskaper</h3>
+                    <div class="skills-grid">
+                        <span class="skill-tag">Flexibilitet</span>
+                        <span class="skill-tag">Anpassningsförmåga</span>
+                        <span class="skill-tag">Teamarbete</span>
+                        <span class="skill-tag">Problemlösning</span>
+                        <span class="skill-tag">Kommunikation</span>
+                        <span class="skill-tag">Organisation</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Praktiska färdigheter</h3>
+                    <div class="skills-grid">
+                        <span class="skill-tag"><i class="fas fa-car"></i> Körkort</span>
+                        <span class="skill-tag"><i class="fas fa-user-graduate"></i> Mentorskap</span>
+                        <span class="skill-tag"><i class="fas fa-laptop"></i> Teknisk kompetens</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Särskilda meriter</h3>
+                    <div class="skills-grid">
+                        <span class="skill-tag">Arbete under press</span>
+                        <span class="skill-tag">Stark arbetsmoral</span>
+                        <span class="skill-tag">Bred erfarenhet</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Slideshow -->
+        <section class="slideshow-section">
+            <h2>Mina arbetsområden</h2>
+            <div class="slideshow-container">
+                <div class="slideshow">
+                    <img src="images/care-work.webp" alt="Vårdarbete" id="slide" width="600" height="400">
+                    <button id="prev"><i class="fas fa-chevron-left"></i></button>
+                    <button id="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="slideshow-caption">
+                    <p id="slide-caption">Vård och omvårdnad</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <h2><i class="fas fa-envelope"></i> KONTAKT</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Telefon</h3>
+                            <p>+46 73 963 26 76</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>E-post</h3>
+                            <p>eldana@icloud.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Adress</h3>
+                            <p>Topasgatan 79, Göteborg</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/eldana-woldemichael-72b74a266" target="_blank">
+                                linkedin.com/in/eldana-woldemichael
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="references">
+                    <h3>Referenser</h3>
+                    <p>Referenser lämnas vid förfrågan.</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer role="contentinfo" class="site-footer">
-        <p>&copy; 2024 [Ditt Namn]. Alla rättigheter förbehållna.</p>
-        <a href="privacy.html">Integritetspolicy</a>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Eldana Woldemichael. Alla rättigheter förbehållna.</p>
+            <p>Portfolio skapad med HTML5, CSS3 Grid/Flexbox, och JavaScript</p>
+        </div>
     </footer>
 
-    <script src="js/carousel.js" defer></script>
+    <script src="script.js"></script>
 </body>
 </html>
